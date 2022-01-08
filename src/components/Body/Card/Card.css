@@ -1,0 +1,103 @@
+.card_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--crd-color);
+}
+
+.card_cont2:hover {
+    transform: scale(1.1);
+}
+
+.card_cont2 {
+    /* overflow: hidden; */
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    width: 320px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card_logo {
+    width: 8rem;
+    margin-top: 1.2rem;
+    height: 40px;
+    width: 40px;
+    clip-path: circle(60px at center);
+}
+
+.card_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    font-weight: 700;
+}
+
+.title_title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.title_symbol {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.card_price {
+    width: auto;
+    background-color: transparent;
+}
+
+.card_market {
+    width: auto;
+    padding-top: 8px;
+    background-color: transparent;
+}
+
+.card_volume {
+    width: auto;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    background-color: transparent;
+}
+
+.card_price,
+.card_market,
+.card_volume {
+    font-size: 1.2rem;
+}
+
+.price_up,
+.price_down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.price_up {
+    color: var(--up-color);
+}
+
+.price_down {
+    color: var(--dwn-color);
+}
+
+.price_chnge {
+    background-color: transparent;
+}

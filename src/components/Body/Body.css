@@ -1,0 +1,53 @@
+.body_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--bdy-color);
+    overflow: hidden;
+}
+
+.card_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    padding: 5%;
+    font-size: large;
+    color: var(--tx-color);
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px var(--bx-shadow);
+    border: 0;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search input::placeholder {
+    color: var(--tx-color);
+}
+
+.search input:focus {
+    box-shadow: 0px 0px 10px 5px var(--bx-shadow);
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        margin-top: 50px;
+        width: 100%;
+        justify-content: center;
+    }
+    .search input {
+        padding: 3%;
+    }
+}
